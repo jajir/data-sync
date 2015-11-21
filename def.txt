@@ -1,0 +1,29 @@
+
+Definition
+
+Name:		A token appended to the URI of a DCMI namespace to create the URI of the term.
+Label:		The human-readable label assigned to the term.
+URI:		The Uniform Resource Identifier used to uniquely identify a term.
+Definition:	A statement that represents the concept and essential nature of the term.
+
+
+sourceUrl:
+No: set number
+Name: set name
+Description: description
+price: price
+pieces: how many pieces is in set
+type: object type (set, image)
+releasedYear: year when set was released
+downloadedDate: when was object downloaded
+
+
+set - (sourceUrl,No,Name,downloadedDate)
+
+example:
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+SELECT * WHERE { ?s dc:creator "Mark Twain" }
+
+image source: LEGO/10234;LEGO/10234,LEGO/10234_alt1;LEGO/10234_alt1,LEGO/10234_alt3;LEGO/10234_alt3,LEGO/10234_alt4;LEGO/10234_alt4
+
